@@ -11,6 +11,7 @@ c.execute("CREATE TABLE IF NOT EXISTS user(regno INTEGER PRIMARY KEY, name TEXT,
 curr.commit()
 root = Tk()
 root.geometry('230x80')
+root.resizable(False, False)
 root.title("HomePage")
 root.config(background="#1b9b6c")
 def login():
