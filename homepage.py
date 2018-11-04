@@ -4,7 +4,7 @@ import sqlite3
 from backend import db
 import string
 import os
-curr = sqlite3.connect('users.db')#cursor same name
+curr = sqlite3.connect('users.db')
 c = curr.cursor()
 database = db()
 c.execute("CREATE TABLE IF NOT EXISTS user(regno INTEGER PRIMARY KEY, name TEXT, address TEXT, gender TEXT, mobile TEXT, email TEXT, password TEXT)")
