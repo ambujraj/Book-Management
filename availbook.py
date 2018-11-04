@@ -7,7 +7,8 @@ database = db()
 class Window(object):
     def __init__(self, window):
         self.window = window
-        self.window.wm_title("Book Management System")
+        self.window.title("Book Management System")
+        self.window.resizable(False, False)
 
         l1 = Label(window, text="Book Name")
         l1.grid(row=0, column=0)
