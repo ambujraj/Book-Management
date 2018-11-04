@@ -7,6 +7,7 @@ cur = sqlite3.connect('users.db')
 c = cur.cursor()
 root = Tk()
 root.geometry('400x350')
+root.resizable(False, False)
 root.title("Login")
 root.config(background="#1b9b6c")
 username = 0
